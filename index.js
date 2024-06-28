@@ -1,9 +1,11 @@
 let express = require("express");
+let cors = require("cors");
 let app = express();
 let PORT = 3000;
 app.listen(PORT, () => {
   console.log("The server is running");
 });
+app.use(cors());
 let products = [
   {
     id: 1,
